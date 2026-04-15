@@ -23,32 +23,25 @@ class Color:
 
 
 ASCII_ART = [
-    "  _   _      _ _        ",
-    " | | | | ___| | | ___  ",
-    " | |_| |/ _ \\ | |/ _ \\ ",
-    " |  _  |  __/ | | (_) |",
-    " |_| |_|\\___|_|_|\\___/ ",
-    "                        ",
-    "  __        __         _     _  _ ",
-    " \\ \\      / /__  _ __| | __| || |",
-    "  \\ \\ /\\ / / _ \\| '__| |/ _` || |",
-    "   \\ V  V / (_) | |  | | (_| ||_|",
-    "    \\_/\\_/ \\___/|_|  |_|\\__,_|(_)",
+    r" _  _ ___ _    _    ___   _ _  ___ ___ _    ___",
+    r"| || | __| |  | |  / _ \ | | || _ \| _ \ |  |   \\",
+    r"| __ | _|| |__| |_| (_) || \/ /|   /| |/ /| |__| |) |",
+    r"|_||_|___|____|____\___/  \/  |_|_\ |___/|____|___/",
 ]
 
-ART_COLORS = [
-    Color.CYAN,
-    Color.CYAN,
-    Color.BLUE,
-    Color.BLUE,
-    Color.MAGENTA,
-    Color.RESET,
-    Color.YELLOW,
-    Color.YELLOW,
-    Color.GREEN,
-    Color.GREEN,
-    Color.RED,
-]
+RAINBOW = [Color.RED, Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE, Color.MAGENTA]
+
+
+def rainbow_line(text):
+    result = ""
+    idx = 0
+    for ch in text:
+        if ch != ' ':
+            result += RAINBOW[idx % len(RAINBOW)] + ch
+            idx += 1
+        else:
+            result += ch
+    return result + Color.RESET
 
 
 def get_info():
@@ -99,15 +92,15 @@ def print_fancy():
     separator = Color.BOLD + Color.WHITE + "─" * 38 + Color.RESET
 
     print()
-    for i, art_line in enumerate(ASCII_ART):
-        color = ART_COLORS[i] if i < len(ART_COLORS) else Color.RESET
-        print(f"  {color}{art_line}{Color.RESET}")
+    for art_line in ASCII_ART:
+        print(f"  {rainbow_line(art_line)}")
 
     print()
-    print(f"  {separator}")
+    print(f"  {rainbow_line('─' * 38)}")
 
-    for col, key, val in info:
-        print(f"  {col}{key:<8}{Color.RESET}: {Color.WHITE}{val}{Color.RESET}")
+    for i, (col, key, val) in enumerate(info):
+        val_color = RAINBOW[i % len(RAINBOW)]
+        print(f"  {col}{key:<8}{Color.RESET}: {val_color}{val}{Color.RESET}")
 
     print()
     print(f"  {color_blocks()}")
