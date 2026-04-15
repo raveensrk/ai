@@ -98,24 +98,15 @@ def print_fancy():
     info = get_info()
     separator = Color.BOLD + Color.WHITE + "─" * 38 + Color.RESET
 
-    # Pad info list so it lines up with ascii art rows
-    info_lines = [""] * len(ASCII_ART)
-    for i, (col, key, val) in enumerate(info):
-        if i < len(ASCII_ART):
-            info_lines[i] = f"  {col}{key:<8}{Color.RESET}: {Color.WHITE}{val}{Color.RESET}"
-
     print()
     for i, art_line in enumerate(ASCII_ART):
         color = ART_COLORS[i] if i < len(ART_COLORS) else Color.RESET
-        info_part = info_lines[i] if i < len(info_lines) else ""
-        print(f"  {color}{art_line}{Color.RESET}{info_part}")
+        print(f"  {color}{art_line}{Color.RESET}")
 
     print()
     print(f"  {separator}")
 
-    # Print remaining info that didn't fit beside the art
-    for j in range(len(ASCII_ART), len(info)):
-        col, key, val = info[j]
+    for col, key, val in info:
         print(f"  {col}{key:<8}{Color.RESET}: {Color.WHITE}{val}{Color.RESET}")
 
     print()
