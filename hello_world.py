@@ -7,6 +7,7 @@ import platform
 import os
 import sys
 import datetime
+import random
 
 
 # ANSI color codes
@@ -78,6 +79,29 @@ def get_info():
     ]
 
 
+PROMPT_IDEAS = [
+    "Build a CLI tool that translates text to morse code.",
+    "Write a script that generates a random password with emojis.",
+    "Create a terminal clock that ticks in real time.",
+    "Make a Python bot that summarizes your TODO list.",
+    "Build a weather app that shows ASCII art for conditions.",
+    "Write a script that turns any text into a word cloud.",
+    "Create a file watcher that plays a sound on changes.",
+    "Build a pomodoro timer with color-coded countdowns.",
+    "Write a grep-like tool that highlights matches in color.",
+    "Make a script that fetches a random Wikipedia fact.",
+    "Build a budget tracker that runs entirely in the terminal.",
+    "Write a tool that animates a bouncing ball in ASCII.",
+    "Create a flashcard app for learning in the terminal.",
+    "Build a snake game that runs in the Python REPL.",
+    "Write a script that auto-generates commit messages from diffs.",
+]
+
+
+def get_prompt_idea():
+    return random.choice(PROMPT_IDEAS)
+
+
 def color_blocks():
     blocks = ""
     colors = [Color.RED, Color.YELLOW, Color.GREEN, Color.CYAN,
@@ -104,6 +128,10 @@ def print_fancy():
 
     print()
     print(f"  {color_blocks()}")
+    print()
+    idea = get_prompt_idea()
+    print(f"  {Color.BOLD}{Color.YELLOW}Prompt Idea{Color.RESET}")
+    print(f"  {Color.CYAN}> {Color.WHITE}{idea}{Color.RESET}")
     print()
 
 
