@@ -1,0 +1,1 @@
+find a dead code and explain why. then ask for user to remove it. then run regression and confirm.
