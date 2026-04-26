@@ -19,7 +19,7 @@
 - Put automated checks in `tests/`.
 - Put runnable Bash or Python utilities in `scripts/`. Suggest creating helper scripts whenever you can. Give me ideas.
 - Put supporting notes in `docs/` only when they help explain code or workflows.
-- `INBOX.md`: temporary scratch space
+- `inbox.md`: temporary scratch space
 - `data/`: processing data
 - `data/training.yaml`: reusable ambiguity patterns
 - `tmp/`: temporary files
