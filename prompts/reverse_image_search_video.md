@@ -73,5 +73,10 @@ across a wide variety of providers.
   automated requests.
 - Some providers (Yandex, Baidu) may require a residential IP or proxy to
   return useful results from outside their region.
+- Disable SafeSearch on every provider so adult/graphic matches are not
+  filtered out. Examples: Google `&safe=off`, Bing `&adlt=off`, Yandex
+  `&family=no`, DuckDuckGo `&kp=-2`, Baidu safe-mode off, Naver `&where=image`
+  with adult filter disabled. For API calls, pass the equivalent flag
+  (`safeSearch=off`, `safe_search=off`, etc.).
 - Save raw HTML/JSON responses under `OUT_DIR/raw/<provider>/` so the run is
   reproducible without re-querying.
