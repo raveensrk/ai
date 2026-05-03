@@ -66,6 +66,18 @@ across a wide variety of providers.
    any conflicting attributions. Flag results that depend on face-recognition
    providers separately so the user can decide whether to trust them.
 
+6. **Prompt the user to open each search in Chrome** (default browser).
+   Build a per-provider URL with the frame attached (or uploaded), then ask
+   the user for confirmation to launch them. On approval, open all URLs in
+   Chrome:
+   - Linux: `google-chrome --new-window "$URL1" "$URL2" ...`
+     (fallback `xdg-open` if Chrome is not installed).
+   - macOS: `open -a "Google Chrome" "$URL1" "$URL2" ...`
+   - Windows: `start chrome "$URL1" "$URL2" ...`
+
+   Print the full list of URLs first so the user can review before any tabs
+   open.
+
 ## Notes
 
 - Prefer API access where keys are available; fall back to opening browser URLs
