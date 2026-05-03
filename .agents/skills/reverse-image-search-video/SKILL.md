@@ -1,12 +1,17 @@
+---
+name: reverse-image-search-video
+description: Reverse image search a video across many providers (Google Lens, Bing, Yandex, TinEye, SauceNAO, trace.moe, DuckDuckGo, etc.). Use when the user wants to identify the source, context, or earliest appearance of a video, find where a clip originated, or locate matches across multiple search engines. Triggers on phrases like "reverse image search this video", "find the source of this video", "where is this clip from", "search this video everywhere".
+---
+
 # Reverse Image Search a Video Across Many Providers
 
-You are given a video file (path or URL). Identify the source, context, and any
-matching content on the web by reverse-image-searching representative frames
-across a wide variety of providers.
+Identify the source, context, and any matching content on the web by
+reverse-image-searching representative frames of a video across a wide variety
+of providers.
 
 ## Inputs
 
-- `VIDEO`: path or URL to the video.
+- `VIDEO`: path or URL to the video. Ask the user if not provided.
 - `MAX_FRAMES` (default `8`): maximum keyframes to extract.
 - `OUT_DIR` (default `tmp/ris/<video-stem>/`): where frames and results are saved.
 
