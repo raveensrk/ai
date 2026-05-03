@@ -1,0 +1,8 @@
+description = "Reverse image search a video across many providers (Google Lens, Bing, Yandex, TinEye, SauceNAO, trace.moe, DuckDuckGo, etc.). Identify the source, earliest appearance, and matches across engines."
+
+prompt = """
+Follow the instructions in @prompts/reverse_image_search_video.md.
+
+User-supplied arguments (video path/URL, optional MAX_FRAMES, OUT_DIR):
+{{args}}
+"""
