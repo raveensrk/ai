@@ -1,1 +1,0 @@
-../../prompts/reverse_image_search_video.md
