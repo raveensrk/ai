@@ -31,6 +31,7 @@ across a wide variety of providers.
    - Baidu Image Search
    - Sogou Image Search
    - Naver Image Search
+   - DuckDuckGo Images
 
    Specialized:
    - SauceNAO (anime, manga, art)
