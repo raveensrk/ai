@@ -1,3 +1,22 @@
-find a dead code and explain why. then ask for user to remove it. then run regression and confirm.
-review all TODO comments in the codebase, group them by priority, and propose a step-by-step plan to resolve each one.
-after every response, append a confidence score from 0 to 100 based on your own assessment of the answer's correctness, factual accuracy, and completeness. format it as "Confidence: X/100 — <one sentence explaining the main reason for that score>". do not inflate the score to seem more helpful; be honest about uncertainty.
+# Prompts
+
+## Prompt templates
+
+- Find a dead code and explain why. then ask for user to remove it. then run regression and confirm.
+- Review all TODO comments in the codebase, group them by priority, and propose a step-by-step plan to resolve each one.
+- Interview me
+
+## Shared Vocabulary
+
+- honored
+- synchronize
+- override
+- probe
+- discover
+- extract
+- invoke
+- initialize
+- schedule
+- consume
+- summarize
+- Grill
