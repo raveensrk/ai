@@ -2,7 +2,7 @@
 
 ## AGENT INSTRUCTIONS
 
-- Grill me and ask clarifying questions before starting a task.
+- Interview me and ask clarifying questions before starting a task.
 - Ask one question at a time.
 
 ## Directory path
