@@ -23,3 +23,19 @@ These are case insensitive.
 | `n` | no |
 | `<` | previous |
 | `>` | next |
+
+
+## Markdown
+
+When linking file paths, use markdown links.
+
+Do      : [File Name](/path/to/file_name.md)
+Don't   : `/path/to/file_name.md`
+
+Same goes for images and media. For images and media use links with preview `![]()`.
+
+Always use relative paths.
+
+## Tasks
+
+[Tasks](./tasks.md)
