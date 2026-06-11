@@ -13,6 +13,8 @@ Based on this current session do the following,
 - Find dead code, and remove it.
 - Perform maintenance and clean up redundancies in this project.
 - Break large code blocks into smaller, focused components to improve usability and maintainability.
+- If you learnt anything new, add notes and instructions to the docs.
+- All the scripts in this project will be invoked from codex or claude code. Codex or claude code will manage and run the scripts behalf of me. I will not be manually running these scripts. So update the script behaviour accordingly.
 - Finally, Suggest me an idea/improvement/tweak/optimization for this project for the future.
 
 ## Example calling prompt

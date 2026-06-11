@@ -14,9 +14,12 @@
 - Make performance improvements to the project.
 - Try to reduce bloat in the project.
 - Try to reduce token usage in the project.
-- Update training data.
+- Update training data if any.
 - Find dead code, and remove it.
-- Finally, clean up redundancies in this project.
+- Perform maintenance and clean up redundancies in this project.
+- Break large code blocks into smaller, focused components to improve usability and maintainability.
+- If you learned anything new, add notes and instructions to the docs.
+- Finally, suggest an idea, improvement, tweak, or optimization for this project.
 
 ## Shared Vocabulary
 
