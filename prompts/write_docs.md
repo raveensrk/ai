@@ -23,12 +23,15 @@ Create dedicated folders for each documentation type within the `docs/` director
 
 Unless specified otherwise, docs should be written in the project root's `docs/` directory.
 
+In Root there must be a README.md.
+
 ## Docs Rules & Style
 
 - **Markdown**: The docs should follow proper markdown syntax from https://spec.commonmark.org/0.31.2/
 - **Tone**: Maintain a professional, technical, but accessible tone.
 - **Voice**: Use active voice.
 - **Examples**: Provide clear, practical examples where applicable.
+- **Section Ordering**: In getting-started tutorials and guides, position all CLI command-related sections before any Web UI-related sections to ensure terminal verification succeeds before browser tools are built.
 
 ## Feedback
 
