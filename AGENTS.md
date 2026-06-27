@@ -5,6 +5,12 @@
 - Interview me and ask clarifying questions before starting a task.
 - Ask one question at a time.
 
+## Always-on rules
+
+These apply to every task without needing a trigger:
+
+- Minimal fix — apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
+
 ## Directory path
 
 - Tests: `tests/`.
