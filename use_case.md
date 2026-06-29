@@ -7,3 +7,4 @@
 - Deep research and analysis
 - Monitoring logs
 - Create browser Extension
+- Generate databook / datasheet
