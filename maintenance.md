@@ -13,6 +13,12 @@ Based on this current session do the following,
 - Update training data if necessary.
 - Reconcile docs and codebase.
 
-## Step 2
+## Step 2 for new git repo
 
-- Commit with a sensible message, tag, and push the changes to the repository.
+- Do you think this project is ready for a git repo? /grill-me and ask me questions if you have doubts.
+
+## Step 3
+
+- Do you think this project is ready for a git commit? /grill-me and ask me questions if you have doubts.
+- Commit, tag, and push the changes to the repository.
+
