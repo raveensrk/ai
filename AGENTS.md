@@ -5,13 +5,35 @@
 - Interview me and ask clarifying questions before starting a task.
 - Ask one question at a time.
 
+## Always-on rules
+
+These apply to every task without needing a trigger:
+
+- Minimal fix — apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
+
 ## Directory path
 
-- Tests: `tests/`.
-- Scripts: `scripts/`
+- Notes and reference: `notes/`
 - Docs: `docs/`
-- Todos and Inbox: `inbox.md`
+- Scripts: `scripts/`
+- Tests: `tests/`
+- Todos and Inbox: `notes/inbox.md`
 - Temporary files: `tmp/`
+
+## Naming
+
+Files and directories use `snake_case` — lowercase words joined by underscores.
+
+- Files: `use_case.md`, `hello_world.py`
+- Directories: `notes/`, `scripts/`
+
+Exceptions:
+
+- Tool-recognized / conventional files keep their canonical casing: `README.md`,
+  `LICENSE`, `AGENTS.md`, `CLAUDE.md`, `SKILL.md`, `.gitignore`.
+- Skill directories under `.agents/skills/` use `kebab-case` per the
+  [Agent Skills](https://agentskills.io) protocol — e.g.
+  `reverse-image-search-video`.
 
 ## Aliases and Shared Terminologies
 
@@ -38,4 +60,4 @@ Always use relative paths.
 
 ## Tasks
 
-[Tasks](./tasks.md)
+[Tasks](./notes/tasks.md)
