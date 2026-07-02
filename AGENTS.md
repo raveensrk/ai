@@ -61,3 +61,7 @@ Always use relative paths.
 ## Tasks
 
 [Tasks](./notes/tasks.md)
+
+## Citations
+
+When writing documentation, add citations when you can.
