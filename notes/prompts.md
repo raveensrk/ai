@@ -6,8 +6,10 @@
 - Review all TODO comments in the codebase, group by priority, and propose a step-by-step plan to resolve each.
 - Interview me.
 - Improve these prompts. Make them concise without losing information.
+- Do /init and add to @AGENTS.md. Refer @AGENTS.md in @CLAUDE.md.
+- Import @file
 
-### Final Prompt
+## Final Prompt
 
 - Reconcile docs and codebase.
 - Add helper scripts if they reduce token usage or improve task quality.
