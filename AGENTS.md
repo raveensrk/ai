@@ -17,7 +17,7 @@ These apply to every task without needing a trigger:
 - Docs: `docs/`
 - Scripts: `scripts/`
 - Tests: `tests/`
-- Todos and Inbox: `notes/inbox.md`
+- Todos and Inbox: [inbox](./notes/inbox.md) — items follow the [Todo Schema](./docs/todo_schema.md)
 - Temporary files: `tmp/`
 
 ## Naming

@@ -1,8 +1,8 @@
 # Emoji Legend
 
-Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 10 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../AGENTS.md) and the output style rules in [agents_notes.md](../notes/agents_notes.md).
+Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 11 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../AGENTS.md) and the output style rules in [agents_notes.md](../notes/agents_notes.md).
 
-## Core legend (10)
+## Core legend (11)
 
 ### Item status — starts a checklist row or table cell
 
@@ -15,6 +15,7 @@ Answers: what happened to this item?
 | ⚠️ | Warning — done but with caveats, or a non-blocking issue |
 | ⏳ | Pending / in progress / waiting on something |
 | 📥 | New / incoming / not yet triaged |
+| 🗑️ | Obsolete / dropped / no longer relevant |
 
 ### Rollup health — one per project, area, or section heading
 
