@@ -47,6 +47,10 @@ These are case insensitive.
 | `>` | next |
 
 
+## Reporting emojis
+
+Use the [Emoji Legend](./docs/emoji_legend.md) in all reports and summaries.
+
 ## Markdown
 
 When linking file paths, use markdown links.
