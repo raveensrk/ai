@@ -1,7 +1,8 @@
 # Inbox
 
 - TODO: Create a methodology presentation on wiki documentation — how to organize
-  and structure data as shared knowledge between the user and the LLM
+  and structure data as shared knowledge between the user and the LLM.
+  Draft deck: [presentations/wiki_methodology](../presentations/wiki_methodology/README.md)
   - Showcase and demos with real use cases
   - Sales pitch: the structure/methodology/workflow is the selling point — package
     the whole thing as a sellable product for the company (the product becomes an agent)

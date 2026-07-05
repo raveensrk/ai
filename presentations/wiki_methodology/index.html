@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Wiki Is the Product — A Methodology for Shared Human–LLM Knowledge</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.css" />
+    <!-- Built-in solarized (light) theme as base; local file overrides it to Solarized Dark -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="theme/solarized_dark.css" />
+    <!-- Syntax highlighting for code blocks -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/highlight/zenburn.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- All slide content lives in slides.md.
+             NOTE: loading an external markdown file requires serving this
+             directory over HTTP (see README.md) — file:// will not work. -->
+        <section
+          data-markdown="slides.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-vertical="^\r?\n--\r?\n$"
+          data-separator-notes="^Note:"
+        ></section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@11.15.0/plugin/mermaid/mermaid.js"></script>
+
+    <script>
+      // Solarized palette (Ethan Schoonover) — kept in sync with theme/solarized_dark.css
+      const S = {
+        base03: '#002b36', base02: '#073642', base01: '#586e75', base00: '#657b83',
+        base0: '#839496', base1: '#93a1a1', base2: '#eee8d5', base3: '#fdf6e3',
+        yellow: '#b58900', orange: '#cb4b16', red: '#dc322f', magenta: '#d33682',
+        violet: '#6c71c4', blue: '#268bd2', cyan: '#2aa198', green: '#859900',
+      };
+
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        transition: 'slide',
+        transitionSpeed: 'default',
+        autoAnimateDuration: 0.8,
+        controls: true,
+        progress: true,
+        center: true,
+
+        // Mermaid config (theme matches Solarized Dark)
+        mermaid: {
+          theme: 'base',
+          darkMode: true,
+          fontFamily: 'Lato, -apple-system, "Segoe UI", Roboto, sans-serif',
+          themeVariables: {
+            darkMode: true,
+            background: S.base03,
+            mainBkg: S.base02,
+            primaryColor: S.base02,
+            primaryTextColor: S.base1,
+            primaryBorderColor: S.base01,
+            secondaryColor: S.base02,
+            secondaryTextColor: S.base1,
+            secondaryBorderColor: S.base01,
+            tertiaryColor: S.base03,
+            tertiaryTextColor: S.base1,
+            tertiaryBorderColor: S.base01,
+            lineColor: S.base0,
+            textColor: S.base1,
+            titleColor: S.base2,
+            nodeTextColor: S.base1,
+            edgeLabelBackground: S.base03,
+            clusterBkg: S.base03,
+            clusterBorder: S.base01,
+            actorBkg: S.base02,
+            actorTextColor: S.base1,
+            actorBorder: S.base01,
+            signalColor: S.base0,
+            signalTextColor: S.base1,
+            labelBoxBkgColor: S.base02,
+            labelTextColor: S.base1,
+            noteBkgColor: S.base02,
+            noteTextColor: S.base1,
+            noteBorderColor: S.yellow,
+          },
+        },
+
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid],
+      });
+    </script>
+  </body>
+</html>

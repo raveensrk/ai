@@ -1,0 +1,116 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Loads on top of the built-in `solarized` (light) theme and flips it to
+ * the dark variant of Ethan Schoonover's Solarized palette.
+ * https://ethanschoonover.com/solarized/
+ *
+ * Palette reference:
+ *   base03 #002b36 (background)      base02 #073642 (bg highlights)
+ *   base01 #586e75 (comments)        base00 #657b83
+ *   base0  #839496 (body text)       base1  #93a1a1 (emphasized text)
+ *   base2  #eee8d5                   base3  #fdf6e3
+ *   yellow #b58900  orange #cb4b16   red     #dc322f  magenta #d33682
+ *   violet #6c71c4  blue   #268bd2   cyan    #2aa198  green   #859900
+ */
+
+/* Override on :root — the built-in theme defines its variables there,
+   and .reveal-viewport (outside .reveal) reads the background from :root. */
+:root {
+  --r-background-color: #002b36;
+  --r-main-color: #839496;
+  --r-heading-color: #93a1a1;
+  --r-link-color: #268bd2;
+  --r-link-color-dark: #2076b3;
+  --r-link-color-hover: #4ea3df;
+  --r-selection-background-color: #d33682;
+  --r-selection-color: #fdf6e3;
+  --r-main-font: 'Lato', -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --r-heading-text-transform: none;
+  --r-code-font: 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.reveal-viewport {
+  background: #002b36;
+  background-color: var(--r-background-color);
+}
+
+/* Accent helpers usable from slides.md, e.g.
+   <span class="sol-cyan">…</span> or <!-- .element: class="sol-green" --> */
+.reveal .sol-yellow  { color: #b58900; }
+.reveal .sol-orange  { color: #cb4b16; }
+.reveal .sol-red     { color: #dc322f; }
+.reveal .sol-magenta { color: #d33682; }
+.reveal .sol-violet  { color: #6c71c4; }
+.reveal .sol-blue    { color: #268bd2; }
+.reveal .sol-cyan    { color: #2aa198; }
+.reveal .sol-green   { color: #859900; }
+.reveal .sol-muted   { color: #586e75; }
+
+/* Inline code and code blocks on the dark base */
+.reveal code {
+  color: #2aa198;
+  background-color: #073642;
+  border-radius: 4px;
+  padding: 0 0.2em;
+}
+.reveal pre code {
+  background-color: #073642;
+  color: #93a1a1;
+  padding: 0.5em;
+  max-height: 480px;
+}
+.reveal pre {
+  box-shadow: none;
+  border: 1px solid #073642;
+}
+
+/* Blockquotes: subtle solarized panel */
+.reveal blockquote {
+  background: #073642;
+  border-left: 4px solid #b58900;
+  box-shadow: none;
+  padding: 0.4em 0.8em;
+  font-style: italic;
+}
+
+/* Tables */
+.reveal table th {
+  color: #93a1a1;
+  border-bottom: 2px solid #586e75;
+}
+.reveal table td {
+  border-bottom: 1px solid #073642;
+}
+
+/* Mermaid diagrams: keep them inside the slide box */
+.reveal .mermaid {
+  display: flex;
+  justify-content: center;
+}
+.reveal .mermaid svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+}
+
+/* Small footnote-style citation line at the bottom of a slide */
+.reveal .cite {
+  font-size: 0.45em;
+  color: #586e75;
+  margin-top: 1.2em;
+}
+.reveal .cite a {
+  color: #586e75;
+  text-decoration: underline;
+}
+
+/* Two-column layout helper */
+.reveal .cols {
+  display: flex;
+  gap: 1em;
+  align-items: flex-start;
+  text-align: left;
+}
+.reveal .cols > div {
+  flex: 1;
+}
