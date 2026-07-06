@@ -62,6 +62,16 @@ Same goes for images and media. For images and media use links with preview `![]
 
 Always use relative paths.
 
+## Bookmarks
+
+Rules for [Bookmarks](./notes/bookmarks.md):
+
+- Every bookmark goes under a `##` category section — never directly under the
+  `# Bookmarks` heading.
+- YouTube videos are filed under `## Blog Posts` — it is a general
+  content/media category, not just written articles.
+- If no existing category fits, ask what to name the new one.
+
 ## Tasks
 
 [Tasks](./notes/tasks.md)
