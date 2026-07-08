@@ -51,4 +51,10 @@ All durable rules and context live in this repo, never in agent session/private 
 
 As we work on the project write useful information and documentation into docs/ directory in the root. Write it like a wiki using markdown files.
 
+## Documentation
 
+As you work, keep the docs/ up to date. Always recoincile documentation and codebase after every edit/change.
+
+## AGENTS.md
+
+Keep the AGENTS.md file up to date with the repository. Suggest me if any new guideline or rule worth adding.
