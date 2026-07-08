@@ -20,6 +20,16 @@ Dynamically invoke plan mode depending on the prompt and task. Decide based on
 your best judgement — enter plan mode for multi-step, ambiguous, or high-impact
 work; skip it for small, well-defined changes.
 
+## Effort level
+
+Low effort is the default. Before executing **any** prompt:
+
+1. Analyse the prompt and task.
+2. Determine the best effort level for it (low / medium / high / extra / max).
+3. If it **differs** from the current effort level, recommend the change with a
+   one-line reason and **wait for confirmation** before executing.
+4. If it **matches** the current level, proceed without asking.
+
 ## Brainstorming
 
 Dynamically invoke the `/brainstorming` skill depending on the prompt and task.
