@@ -20,6 +20,13 @@ Dynamically invoke plan mode depending on the prompt and task. Decide based on
 your best judgement — enter plan mode for multi-step, ambiguous, or high-impact
 work; skip it for small, well-defined changes.
 
+## Brainstorming
+
+Dynamically invoke the `/brainstorming` skill depending on the prompt and task.
+Use your judgement to decide when brainstorming vs. plan mode fits best —
+reach for brainstorming when intent, requirements, or design are still open;
+reach for plan mode once the goal is clear and it's time to sequence the work.
+
 ## Memories
 
 Always saved memories locally. Save location: `docs/memories.md`
