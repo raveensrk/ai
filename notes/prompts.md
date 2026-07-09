@@ -9,6 +9,9 @@
 - Improve these prompts. Make them concise without losing information.
 - Do /init and add to @AGENTS.md. Refer @AGENTS.md in @CLAUDE.md.
 - Import @file
+- Please go back and verify all your work so far. Make sure you used best practices, were efficient, and didn't introduce any issues.
+- Based on the project I'm working on, what Claude Skills should I create?
+- Before we start building, interview me about this: What is the core problem this solves? Who is this for? What does success look like? What should this NOT do? Summarize it back to me before we write any code.
 
 ## Final Prompt
 
