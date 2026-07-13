@@ -31,9 +31,6 @@ Exceptions:
 
 - Tool-recognized / conventional files keep their canonical casing: `README.md`,
   `LICENSE`, `AGENTS.md`, `CLAUDE.md`, `SKILL.md`, `.gitignore`.
-- Skill directories under `.agents/skills/` use `kebab-case` per the
-  [Agent Skills](https://agentskills.io) protocol — e.g.
-  `reverse-image-search-video`.
 
 ## Aliases and Shared Terminologies
 

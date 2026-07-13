@@ -68,6 +68,7 @@ Keep the AGENTS.md file up to date with the repository. Suggest me if any new gu
 
 Before you do any work, mention how you could verify that work.
 
-## Follow up
+## Responses
 
-Suggest me some follow-up prompts after you finish the work. 
+- Suggest me some follow-up prompts after you finish the work.
+- Always replay in clear and concise tone.
