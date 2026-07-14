@@ -65,4 +65,3 @@
 - rule
 - pure
 - concise
-

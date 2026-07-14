@@ -1,6 +1,6 @@
 # Emoji Legend
 
-Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 11 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../AGENTS.md) and the output style rules in [agents_notes.md](../notes/agents_notes.md).
+Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 11 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../AGENTS.md) and the output style rules in [agents_notes.md](agents_notes.md).
 
 ## Core legend (11)
 

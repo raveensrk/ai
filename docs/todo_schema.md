@@ -1,6 +1,6 @@
 # Todo Schema
 
-Canonical format for todo items in notes files ([inbox.md](../notes/inbox.md), task lists) across every project. It formalizes the format already in use in the inbox; referenced from [AGENTS.md](../AGENTS.md).
+Canonical format for todo items in documentation files ([inbox.md](inbox.md), task lists) across every project. It formalizes the format already in use in the inbox; referenced from [AGENTS.md](../AGENTS.md).
 
 ## Format
 

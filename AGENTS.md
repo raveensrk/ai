@@ -13,11 +13,10 @@ These apply to every task without needing a trigger:
 
 ## Directory path
 
-- Notes and reference: `notes/`
 - Docs: `docs/`
 - Scripts: `scripts/`
 - Tests: `tests/`
-- Todos and Inbox: [inbox](./notes/inbox.md) — items follow the [Todo Schema](./docs/todo_schema.md)
+- Todos and Inbox: [inbox](./docs/inbox.md) — items follow the [Todo Schema](./docs/todo_schema.md)
 - Temporary files: `tmp/`
 
 ## Naming
@@ -25,7 +24,7 @@ These apply to every task without needing a trigger:
 Files and directories use `snake_case` — lowercase words joined by underscores.
 
 - Files: `use_case.md`, `hello_world.py`
-- Directories: `notes/`, `scripts/`
+- Directories: `docs/`, `scripts/`
 
 Exceptions:
 
@@ -61,7 +60,7 @@ Always use relative paths.
 
 ## Bookmarks
 
-Rules for [Bookmarks](./notes/bookmarks.md):
+Rules for [Bookmarks](./docs/bookmarks.md):
 
 - Every bookmark goes under a `##` category section — never directly under the
   `# Bookmarks` heading.
@@ -71,7 +70,7 @@ Rules for [Bookmarks](./notes/bookmarks.md):
 
 ## Tasks
 
-[Tasks](./notes/tasks.md)
+[Tasks](./docs/tasks.md)
 
 ## Citations
 

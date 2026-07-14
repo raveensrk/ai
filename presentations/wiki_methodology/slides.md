@@ -105,7 +105,7 @@ Note: The key mental shift: docs are not for humans OR for machines — they are
 flowchart LR
   U["👤 User"] -- "writes & reads" --> W
   subgraph W["📚 The Wiki — shared knowledge"]
-    R["📜 AGENTS.md<br/>rules & conventions"] ~~~ N["🗂 notes/ · docs/ · prompts/<br/>content & task prompts"] ~~~ T["🔤 terminologies & aliases<br/>shared vocabulary"]
+    R["📜 AGENTS.md<br/>rules & conventions"] ~~~ N["🗂 docs/<br/>content & task prompts"] ~~~ T["🔤 terminologies & aliases<br/>shared vocabulary"]
   end
   W -- "reads & writes" --> A["🤖 LLM Agent"]
   U -. "task prompt" .-> A
@@ -140,7 +140,7 @@ Note: Everything that follows is one of these five principles applied. None of t
 ```text
 ai/
 ├── AGENTS.md        ← the contract: rules & conventions
-└── notes/           ← the wiki: knowledge & inbox
+└── docs/            ← the wiki: knowledge & inbox
 ```
 
 --
@@ -152,12 +152,11 @@ ai/
 ```text
 ai/
 ├── AGENTS.md        ← the contract: rules & conventions
-├── notes/           ← the wiki: knowledge & inbox
+├── docs/            ← the wiki: knowledge & inbox
 │   ├── inbox.md     ← capture point: todos land here first
 │   ├── tasks.md     ← callable task prompts
-│   └── terminologies.md
-├── docs/            ← long-form structured documentation
-├── prompts/         ← reusable prompt templates
+│   ├── terminologies.md
+│   └── write_docs.md ← reusable documentation prompt
 ├── scripts/         ← automation the agent may run
 └── tmp/             ← scratch space (never knowledge)
 ```
@@ -213,10 +212,10 @@ Note: For the docs/ directory we adopt Diátaxis: tutorials, how-to guides, refe
 <div class="mermaid">
 <pre>
 flowchart TD
-  C["💭 Capture<br/>any thought, any time"] --> I["notes/inbox.md"]
+  C["💭 Capture<br/>any thought, any time"] --> I["docs/inbox.md"]
   I --> TR{"Triage"}
-  TR -- "knowledge" --> N["notes/ & docs/<br/>structured pages"]
-  TR -- "repeatable task" --> TP["notes/tasks.md<br/>task-calling prompt"]
+  TR -- "knowledge" --> N["docs/<br/>structured pages"]
+  TR -- "repeatable task" --> TP["docs/tasks.md<br/>task-calling prompt"]
   TR -- "new term" --> V["terminologies & aliases"]
   TP --> AG["🤖 Agent executes"]
   N --> AG
@@ -240,7 +239,7 @@ sequenceDiagram
   participant W as 📚 Wiki
   U->>A: "Do maintenance" (task alias)
   A->>W: read AGENTS.md — rules & conventions
-  A->>W: read notes/tasks.md → maintenance.md
+  A->>W: read docs/tasks.md → maintenance.md
   A->>U: clarifying question (one at a time)
   U->>A: answer ("y")
   A->>A: execute task
@@ -259,7 +258,7 @@ Note: This is what a single session looks like. The user speaks in shared vocabu
 
 ### Demo 1 — Tasks as callable prompts
 
-`notes/tasks.md`:
+`docs/tasks.md`:
 
 > Following are tasks that the AI/llm will perform for me.
 > **The heading will be the task calling prompt.**
@@ -267,7 +266,7 @@ Note: This is what a single session looks like. The user speaks in shared vocabu
 - Saying **"Maintenance"** invokes the whole documented procedure <!-- .element: class="fragment" -->
 - The prompt *is* documentation; the documentation *is* the prompt <!-- .element: class="fragment sol-cyan" -->
 
-Note: Demo this live: type the single word "Maintenance" and watch the agent open notes/maintenance.md and follow it. New team members and new agents get identical behavior because the procedure lives in the wiki, not in anyone's head.
+Note: Demo this live: type the single word "Maintenance" and watch the agent open docs/maintenance.md and follow it. New team members and new agents get identical behavior because the procedure lives in the wiki, not in anyone's head.
 
 --
 
@@ -289,7 +288,7 @@ Note: Aliases look trivial but they are the seed of something bigger: a controll
 
 ### Demo 3 — Documentation on demand
 
-- `prompts/write_docs.md` encodes the **Divio/Diátaxis** method
+- `docs/write_docs.md` encodes the **Divio/Diátaxis** method
 - Point the agent at any project → it writes docs *in your structure*
 - Consistency without style guides or review cycles <!-- .element: class="fragment" -->
 
@@ -299,7 +298,7 @@ Note: Because the documentation methodology itself lives in the wiki as a prompt
 
 ### Demo 4 — This deck built itself 🤯
 
-1. A voice note became a TODO in `notes/inbox.md`
+1. A voice note became a TODO in `docs/inbox.md`
 2. The agent read the TODO, interviewed the user, researched sources
 3. …and produced **this presentation**, in the wiki, with citations
 

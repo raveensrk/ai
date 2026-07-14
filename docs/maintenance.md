@@ -21,4 +21,3 @@ Based on this current session do the following,
 
 - Do you think this project is ready for a git commit? /grill-me and ask me questions if you have doubts.
 - Commit, tag, and push the changes to the repository.
-

@@ -12,4 +12,3 @@
 4. Multiply Yourself
 5. Your Inner Loop
 6. Build for the Future
-
