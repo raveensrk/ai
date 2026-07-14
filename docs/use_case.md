@@ -2,9 +2,11 @@
 
 - Programming
 - Create, Update and Manage Documentation
-- Finantial Analysis
+- Financial Analysis
 - Create desktop apps
 - Deep research and analysis
 - Monitoring logs
 - Create browser Extension
-- Generate databook / datasheet
+- Generate data book / data sheet
+- Translator - one language to another
+- Transformer - one programming language to another

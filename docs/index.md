@@ -11,7 +11,6 @@ Index of documentation in this directory.
 - [Common Rules](./common.md) — Shared rules for agents working in this repository.
 - [Emoji Legend](./emoji_legend.md) — Canonical emoji vocabulary for agent reports and summaries.
 - [Inbox](./inbox.md) — Incoming tasks and ideas.
-- [Maintenance](./maintenance.md) — Repository maintenance workflow.
 - [Prompts](./prompts.md) — Reusable prompts organized by workflow stage.
 - [Tasks](./tasks.md) — Tasks that AI agents can perform.
 - [Terminologies](./terminologies.md) — Shared prompting vocabulary.

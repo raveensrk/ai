@@ -24,44 +24,36 @@
 
 ## Stage 3 - Documentation
 
+Based on the current session update the documentation and training data.
+
 - Remove stale docs
+- Update documentation
+- Reconcile docs and codebase.
 - Try to reduce token usage in the project by updating the docs. 
-- Write docs like a wiki.
+- Write docs like a book and wiki.
 - Based on this session update and reconcile the docs and codebase.
 - If you learned anything new, add notes and instructions to the docs.
+- Update training data if any.
 
 ## Stage 4 - Maintenance
+
+Based on this current session do the following,
 
 - Find dead code and remove it.
 - Add helper scripts if they reduce token usage or improve task quality.
 - Make performance improvements to the project.
 - Try to reduce bloat in the project.
-- Update training data if any.
 - Perform maintenance and clean up redundancies in this project.
 - Break large code blocks into smaller, focused components to improve usability and maintainability.
 - Suggest an idea, improvement, tweak, or optimization for this project.
 - Finally, Critic this project.
+
+## Stage 5 - Release
+
+- Commit with a sensible message. Tag. Push the changes to the repository.
 
 ## General
 
 - Find dead code, explain why, ask the user to remove it, then run regression tests to confirm.
 - Based on the project I'm working on, what Claude Skills should I create?
 
-## Shared Vocabulary
-
-- honored
-- synchronize
-- override
-- probe
-- discover
-- extract
-- invoke
-- initialize
-- schedule
-- consume
-- summarize
-- grill
-- authoring rule
-- rule
-- pure
-- concise

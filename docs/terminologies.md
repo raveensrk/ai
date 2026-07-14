@@ -11,3 +11,22 @@ The purpose of this document it to note down all useful terminologies that i can
 ## English
 
 - Enclosing
+
+## Shared Vocabulary
+
+- honored
+- synchronize
+- override
+- probe
+- discover
+- extract
+- invoke
+- initialize
+- schedule
+- consume
+- summarize
+- grill
+- authoring rule
+- rule
+- pure
+- concise
