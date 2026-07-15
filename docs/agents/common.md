@@ -91,7 +91,7 @@ Before you do any work, mention how you could verify that work.
 - Docs: `docs/`
 - Scripts: `scripts/`
 - Tests: `tests/`
-- Todos and Inbox: [inbox](./docs/notes/inbox.md) - items follow the [Todo Schema](./docs/agents/todo_schema.md)
+- Todos and Inbox: [inbox](../notes/inbox.md) - items follow the [Todo Schema](./todo_schema.md)
 - Temporary files: `tmp/`
 
 ## Naming
