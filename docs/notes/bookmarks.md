@@ -14,8 +14,9 @@
 - [What AI Agent Skills Are and How They Work](https://youtu.be/Lg-meK5IU8Q)
 - [How to Use Claude Effort Levels (Full Guide)](https://youtu.be/rA_UZS-EJpU)
 - [Claude is definitely not conscious…](https://youtu.be/KGtko3y2RXQ)
-- [Stop Prompting Claude. Use Karpathy's Method Instead.](https://youtu.be/7zZy1QTvokM) - Full notes: [ai_agents.md](ai_agents.md)
+- [Stop Prompting Claude. Use Karpathy's Method Instead.](https://youtu.be/7zZy1QTvokM)
 - <https://larsfaye.com/articles/agentic-coding-is-a-trap>
+- [Stop Prompting Claude. Use Karpathy's Method Instead.](https://youtu.be/7zZy1QTvokM)
 
 ## Read Later
 

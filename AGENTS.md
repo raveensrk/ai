@@ -1,66 +1,8 @@
 # Repository Guidelines
 
-## AGENT INSTRUCTIONS
-
-- Interview me and ask clarifying questions before starting a task.
-- Ask one question at a time.
-
-## Always-on rules
-
-These apply to every task without needing a trigger:
-
-- Minimal fix - apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
-
-## Directory path
-
-- Docs: `docs/`
-- Scripts: `scripts/`
-- Tests: `tests/`
-- Todos and Inbox: [inbox](./docs/inbox.md) - items follow the [Todo Schema](./docs/todo_schema.md)
-- Temporary files: `tmp/`
-
-## Naming
-
-Files and directories use `snake_case` - lowercase words joined by underscores.
-
-- Files: `use_case.md`, `hello_world.py`
-- Directories: `docs/`, `scripts/`
-
-Exceptions:
-
-- Tool-recognized / conventional files keep their canonical casing: `README.md`,
-  `LICENSE`, `AGENTS.md`, `CLAUDE.md`, `SKILL.md`, `.gitignore`.
-
-## Aliases and Shared Terminologies
-
-These are case insensitive.
-
-| Command | Meaning |
-|---------|---------|
-| `y` | yes |
-| `n` | no |
-| `<` | previous |
-| `>` | next |
-
-
-## Reporting emojis
-
-Use the [Emoji Legend](./docs/emoji_legend.md) in all reports and summaries.
-
-## Markdown
-
-When linking file paths, use markdown links.
-
-Do      : [File Name](/path/to/file_name.md)
-Don't   : `/path/to/file_name.md`
-
-Same goes for images and media. For images and media use links with preview `![]()`.
-
-Always use relative paths.
-
 ## Bookmarks
 
-Rules for [Bookmarks](./docs/bookmarks.md):
+Rules for [Bookmarks](./docs/notes/bookmarks.md):
 
 - Every bookmark goes under a `##` category section - never directly under the
   `# Bookmarks` heading.
@@ -68,10 +10,6 @@ Rules for [Bookmarks](./docs/bookmarks.md):
   content/media category, not just written articles.
 - If no existing category fits, ask what to name the new one.
 
-## Citations
-
-When writing documentation, add citations when you can.
-
 ## Common
 
-@./docs/common.md
+@./docs/agents/common.md

@@ -5,6 +5,17 @@
 @./emoji_legend.md
 @./todo_schema.md
 
+## Working style
+
+- Use agile work. Tight scope.
+- Nothing vague - precise goal / result.
+- Use a second AI model to critique the output.
+- Define the precise criteria for a great result up front.
+- Use a past example as the format to match.
+- Interview me and ask clarifying questions before starting a task.
+- Ask one question at a time.
+- Minimal fix - apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
+
 ## Output style
 
 - Goal: clarity and easy reading 
@@ -57,8 +68,10 @@ All durable rules and context live in this repo, never in agent session/private 
 ## Documentation
 
 - Documentation lives in [docs](docs).
+- Every subdirectory under `docs/` must have an `index.md`.
 - As you work, keep the docs/ up to date. Always recoincile documentation and codebase after every edit/change.
 - As we work on the project write useful information and documentation into docs/ directory in the root. Write it like a wiki using markdown files.
+- When writing documentation, add citations when you can.
 
 ## AGENTS.md
 
@@ -72,3 +85,35 @@ Before you do any work, mention how you could verify that work.
 
 - Suggest me some follow-up prompts after you finish the work.
 - Always replay in clear and concise tone.
+
+## Directory path
+
+- Docs: `docs/`
+- Scripts: `scripts/`
+- Tests: `tests/`
+- Todos and Inbox: [inbox](./docs/notes/inbox.md) - items follow the [Todo Schema](./docs/agents/todo_schema.md)
+- Temporary files: `tmp/`
+
+## Naming
+
+Files and directories use `snake_case` - lowercase words joined by underscores.
+
+- Files: `use_case.md`, `hello_world.py`
+- Directories: `docs/`, `scripts/`
+
+Exceptions:
+
+- Tool-recognized / conventional files keep their canonical casing: `README.md`,
+  `LICENSE`, `AGENTS.md`, `CLAUDE.md`, `SKILL.md`, `.gitignore`.
+
+## Markdown
+
+When linking file paths, use markdown links.
+
+Do      : [File Name](/path/to/file_name.md)
+Don't   : `/path/to/file_name.md`
+
+Same goes for images and media. For images and media use links with preview `![]()`.
+
+Always use relative paths.
+

@@ -1,6 +1,6 @@
 # Emoji Legend
 
-Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 11 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../AGENTS.md) and the output style rules in [agents_notes.md](agents_notes.md).
+Canonical emoji vocabulary for agent reports and summaries, across every project. The core legend is 11 emojis in three tiers; dev repos add 2 more. Referenced from [AGENTS.md](../../AGENTS.md) and the output style rules in [agents_notes.md](../notes/agents_notes.md).
 
 ## Core legend (11)
 
@@ -49,7 +49,7 @@ For dev repos only:
 - Item emojis (✅ ❌ ⚠️ ⏳ 📥) mark single items; health emojis (🟢 🟡 🔴) summarize areas - don't mix tiers. ⚠️ flags an item, 🟡 flags an area; ❌ fails an item, 🔴 blocks an area.
 - Group ❓ items together (top or bottom of the report) so "what do you need from me" is scannable at a glance.
 - Emojis are status markers, not prose decoration - don't sprinkle them into sentences.
-- A doc may define its own local legend for other purposes (e.g. the guide legend in [claude_starter_pack_2026.md](claude_starter_pack_2026.md)); reports and summaries always use the meanings on this page.
+- A doc may define its own local legend for other purposes; reports and summaries always use the meanings on this page.
 
 ## Example
 

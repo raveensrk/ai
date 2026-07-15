@@ -30,3 +30,5 @@ The purpose of this document it to note down all useful terminologies that i can
 - rule
 - pure
 - concise
+- gaps
+- risky
