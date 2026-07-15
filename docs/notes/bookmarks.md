@@ -16,7 +16,6 @@
 - [Claude is definitely not conscious…](https://youtu.be/KGtko3y2RXQ)
 - [Stop Prompting Claude. Use Karpathy's Method Instead.](https://youtu.be/7zZy1QTvokM)
 - <https://larsfaye.com/articles/agentic-coding-is-a-trap>
-- [Stop Prompting Claude. Use Karpathy's Method Instead.](https://youtu.be/7zZy1QTvokM)
 
 ## Read Later
 
