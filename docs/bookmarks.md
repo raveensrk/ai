@@ -2,7 +2,7 @@
 
 ## Agent Skills
 
-- [Superpowers — Claude Code skills library](https://github.com/obra/superpowers/)
+- [Superpowers - Claude Code skills library](https://github.com/obra/superpowers/)
 
 ## AI Benchmarks
 

@@ -9,19 +9,19 @@
 
 These apply to every task without needing a trigger:
 
-- Minimal fix — apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
+- Minimal fix - apply the smallest change that solves the problem; do not expand scope across layers unless each layer is genuinely load-bearing.
 
 ## Directory path
 
 - Docs: `docs/`
 - Scripts: `scripts/`
 - Tests: `tests/`
-- Todos and Inbox: [inbox](./docs/inbox.md) — items follow the [Todo Schema](./docs/todo_schema.md)
+- Todos and Inbox: [inbox](./docs/inbox.md) - items follow the [Todo Schema](./docs/todo_schema.md)
 - Temporary files: `tmp/`
 
 ## Naming
 
-Files and directories use `snake_case` — lowercase words joined by underscores.
+Files and directories use `snake_case` - lowercase words joined by underscores.
 
 - Files: `use_case.md`, `hello_world.py`
 - Directories: `docs/`, `scripts/`
@@ -62,16 +62,16 @@ Always use relative paths.
 
 Rules for [Bookmarks](./docs/bookmarks.md):
 
-- Every bookmark goes under a `##` category section — never directly under the
+- Every bookmark goes under a `##` category section - never directly under the
   `# Bookmarks` heading.
-- YouTube videos are filed under `## Blog Posts` — it is a general
+- YouTube videos are filed under `## Blog Posts` - it is a general
   content/media category, not just written articles.
 - If no existing category fits, ask what to name the new one.
-
-## Tasks
-
-[Tasks](./docs/tasks.md)
 
 ## Citations
 
 When writing documentation, add citations when you can.
+
+## Common
+
+@./docs/common.md

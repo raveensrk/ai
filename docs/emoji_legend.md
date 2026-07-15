@@ -4,7 +4,7 @@ Canonical emoji vocabulary for agent reports and summaries, across every project
 
 ## Core legend (11)
 
-### Item status — starts a checklist row or table cell
+### Item status - starts a checklist row or table cell
 
 Answers: what happened to this item?
 
@@ -12,12 +12,12 @@ Answers: what happened to this item?
 |-------|---------|
 | ✅ | Done / success / verified |
 | ❌ | Failed / missing / not done |
-| ⚠️ | Warning — done but with caveats, or a non-blocking issue |
+| ⚠️ | Warning - done but with caveats, or a non-blocking issue |
 | ⏳ | Pending / in progress / waiting on something |
 | 📥 | New / incoming / not yet triaged |
 | 🗑️ | Obsolete / dropped / no longer relevant |
 
-### Rollup health — one per project, area, or section heading
+### Rollup health - one per project, area, or section heading
 
 Answers: how is this area overall?
 
@@ -27,11 +27,11 @@ Answers: how is this area overall?
 | 🟡 | Needs attention / at risk |
 | 🔴 | Blocked / critical |
 
-### Markers — communication flags
+### Markers - communication flags
 
 | Emoji | Meaning |
 |-------|---------|
-| ❓ | Needs Raveen's input — a decision or answer only he can give |
+| ❓ | Needs Raveen's input - a decision or answer only he can give |
 | 💡 | Idea / suggestion / optional improvement |
 
 ## Code-project extension (+2)
@@ -46,28 +46,28 @@ For dev repos only:
 ## Usage rules
 
 - The emoji starts the line or cell; one status emoji per item.
-- Item emojis (✅ ❌ ⚠️ ⏳ 📥) mark single items; health emojis (🟢 🟡 🔴) summarize areas — don't mix tiers. ⚠️ flags an item, 🟡 flags an area; ❌ fails an item, 🔴 blocks an area.
+- Item emojis (✅ ❌ ⚠️ ⏳ 📥) mark single items; health emojis (🟢 🟡 🔴) summarize areas - don't mix tiers. ⚠️ flags an item, 🟡 flags an area; ❌ fails an item, 🔴 blocks an area.
 - Group ❓ items together (top or bottom of the report) so "what do you need from me" is scannable at a glance.
-- Emojis are status markers, not prose decoration — don't sprinkle them into sentences.
+- Emojis are status markers, not prose decoration - don't sprinkle them into sentences.
 - A doc may define its own local legend for other purposes (e.g. the guide legend in [claude_starter_pack_2026.md](claude_starter_pack_2026.md)); reports and summaries always use the meanings on this page.
 
 ## Example
 
 ### Statement import 🟡
 
-- [x] ✅ hdfc credit card — 42 transactions imported
-- [x] ⚠️ icici savings — imported; 3 duplicates skipped
-- [ ] ⏳ axis credit card — waiting on locked PDF
-- [ ] 📥 sbi savings — new statement, not yet triaged
-- [ ] ❌ kotak — download failed (site error)
+- [x] ✅ hdfc credit card - 42 transactions imported
+- [x] ⚠️ icici savings - imported; 3 duplicates skipped
+- [ ] ⏳ axis credit card - waiting on locked PDF
+- [ ] 📥 sbi savings - new statement, not yet triaged
+- [ ] ❌ kotak - download failed (site error)
 
-❓ Axis PDF is password-protected — share the password or an unlocked copy?
+❓ Axis PDF is password-protected - share the password or an unlocked copy?
 
 💡 A pre-parse dedupe step would remove the icici duplicates automatically.
 
 ## Using from other repos
 
-Reference this file — do not copy it. In the target repo's `AGENTS.md` / `CLAUDE.md`, add an import line:
+Reference this file - do not copy it. In the target repo's `AGENTS.md` / `CLAUDE.md`, add an import line:
 
 ```markdown
 @~/repos/ai/docs/emoji_legend.md
