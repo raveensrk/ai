@@ -70,5 +70,5 @@ For dev repos only:
 Reference this file - do not copy it. In the target repo's `AGENTS.md` / `CLAUDE.md`, add an import line:
 
 ```markdown
-@~/repos/ai/docs/emoji_legend.md
+@~/repos/ai/docs/agents/emoji_legend.md
 ```

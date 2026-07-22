@@ -12,3 +12,7 @@
 4. Multiply Yourself
 5. Your Inner Loop
 6. Build for the Future
+
+## Memories
+
+Never use memories, instead prefer saving locally. This is easier to maintain.

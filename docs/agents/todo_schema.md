@@ -64,5 +64,5 @@ When summarizing todos in reports, use the [Emoji Legend](emoji_legend.md):
 Reference this file - do not copy it. In the target repo's `AGENTS.md` / `CLAUDE.md`, add an import line:
 
 ```markdown
-@~/repos/ai/docs/todo_schema.md
+@~/repos/ai/docs/agents/todo_schema.md
 ```

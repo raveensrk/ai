@@ -20,3 +20,4 @@
 ## Read Later
 
 - [Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan](https://www.youtube.com/watch?v=96jN2OCOfLs)
+- [kilocode/AGENTS.md at main · Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode/blob/main/AGENTS.md)

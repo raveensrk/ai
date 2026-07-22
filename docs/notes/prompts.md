@@ -1,5 +1,7 @@
 # Prompts
 
+- TODO: Make documentation a skill/agents instructions and trigger automatically after review.
+
 ## Stage 0 - Planning
 
 - Interview me.
@@ -19,6 +21,8 @@
 
 ## Stage 2 - Review
 
+Based on this session,
+
 - Go back and verify all your work so far. Make sure you used best practices, were efficient, and didn't introduce any issues.
 - If you can verify the work so far with a test, create it.
 
@@ -27,7 +31,7 @@
 Based on the current session update the documentation and training data.
 
 - Remove stale docs
-- Update documentation
+- Write and Update documentation
 - Reconcile docs and codebase.
 - Try to reduce token usage in the project by updating the docs. 
 - Write docs like a book and wiki.

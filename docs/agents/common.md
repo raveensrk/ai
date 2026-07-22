@@ -2,8 +2,10 @@
 
 ## General
 
-@./emoji_legend.md
-@./todo_schema.md
+At session start, Read these files
+
+- ~/repos/ai/docs/agents/todo_schema.md
+- ~/repos/ai/docs/agents/emoji_legend.md
 
 ## Working style
 
@@ -115,5 +117,8 @@ Don't   : `/path/to/file_name.md`
 
 Same goes for images and media. For images and media use links with preview `![]()`.
 
-Always use relative paths.
+Use relative paths when writing documents. But always use absolute path when in-lining or importing markdown files for claude startup instruction file CLAUDE.md.
 
+## Tokens
+
+- Automatically suggest when to compact or clear at the end of your response.
