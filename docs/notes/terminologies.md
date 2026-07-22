@@ -32,3 +32,5 @@ The purpose of this document it to note down all useful terminologies that i can
 - concise
 - gaps
 - risky
+- meaningful events
+- precision
