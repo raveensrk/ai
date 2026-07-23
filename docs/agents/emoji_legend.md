@@ -55,11 +55,13 @@ For dev repos only:
 
 ### Statement import 🟡
 
+```markdown
 - [x] ✅ hdfc credit card - 42 transactions imported
 - [x] ⚠️ icici savings - imported; 3 duplicates skipped
 - [ ] ⏳ axis credit card - waiting on locked PDF
 - [ ] 📥 sbi savings - new statement, not yet triaged
 - [ ] ❌ kotak - download failed (site error)
+```
 
 ❓ Axis PDF is password-protected - share the password or an unlocked copy?
 

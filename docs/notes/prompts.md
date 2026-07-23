@@ -1,7 +1,5 @@
 # Prompts
 
-- TODO: Make documentation a skill/agents instructions and trigger automatically after review.
-
 ## Stage 0 - Planning
 
 - Interview me.
