@@ -122,3 +122,69 @@ Use relative paths when writing documents. But always use absolute path when in-
 ## Tokens
 
 - Automatically suggest when to compact or clear at the end of your response.
+
+## Commits and PR Titles
+
+### Commit Conventions
+
+Conventional Commits with scopes. Omit scope when spanning multiple scopes.
+
+See: https://www.conventionalcommits.org/en/v1.0.0/
+
+Use conventional commit-style messages and PR titles: type(scope): summary.
+
+Types are feat, fix, docs, chore, refactor, and test.
+
+Scopes are optional; use the affected package or area when helpful, e.g. core, web, tui, app, design, verif, desktop, etc.
+
+### Example
+
+- fix(tui): simplify thinking toggle styling
+- docs: update contributing guide
+- chore(verif): rename variables.
+
+## Naming Enforcement (Read This)
+
+THIS RULE IS MANDATORY FOR AGENT-WRITTEN CODE.
+
+- Use single word names by default for new locals, params, and helper functions.
+- Multi-word names are allowed only when a single word would be unclear or ambiguous.
+- Do not introduce new camelCase compounds when a short single-word alternative is clear.
+- Before finishing edits, review touched lines and shorten newly introduced identifiers where possible.
+- Good short names to prefer: pid, cfg, err, opts, dir, root, child, state, timeout.
+- Examples to avoid unless truly required: inputPID, existingClient, connectTimeout, workerPath.
+
+## Avoid else statements
+
+Prefer early returns (or an IIFE) over else. After an `if` that returns/throws, the else is redundant.
+
+## Markdown Tables
+
+Do not pad markdown table cells for column alignment. Use the compact form with single-space-padded content cells and a minimal separator row:
+
+```
+| Command | What it runs |
+|---|---|
+| `app serve` | runs app web ui |
+```
+
+Do **not** right-pad cells to line up columns:
+
+```
+| Command                       | What it runs             |
+| ----------------------------- | ------------------------ |
+| `app serve`                   | runs app web ui          |
+```
+
+Padding makes every content change rewrite the entire table, which blows up diffs on untouched rows.
+
+## Pull Requests
+
+PR descriptions should explain what changed, why the change is needed, and the intent or constraints a reviewer cannot infer from the diff alone. Keep simple PRs brief, but give non-trivial changes enough context to stand on their own. Skip file-by-file inventories, test result summaries, and anything obvious from the code itself.
+
+## Unsorted
+
+- ALWAYS USE PARALLEL TOOLS WHEN APPLICABLE.
+- Keep things in one function unless composable or reusable
+- Avoid unnecessary destructuring. Instead of const { a, b } = obj, use obj.a and obj.b to preserve context
+

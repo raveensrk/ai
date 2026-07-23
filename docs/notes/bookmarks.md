@@ -4,6 +4,10 @@
 
 - [Superpowers - Claude Code skills library](https://github.com/obra/superpowers/)
 
+## AI AGENTS.md inspirations
+
+- [Kilocode AGENTS.md](https://github.com/Kilo-Org/kilocode/blob/main/AGENTS.md)
+
 ## AI Benchmarks
 
 - [Artificial Analysis](https://artificialanalysis.ai)
